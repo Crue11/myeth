@@ -11,14 +11,11 @@
     {{-- css --}}
     @yield('styles')
 
-{{--    vue.js--}}
-    <script src="{{asset('storage/vue/vue.global.min.js')}}"></script>
+
 </head>
 <body>
 
-{{--    <div id="app">--}}
-{{--        <flip-card></flip-card>--}}
-{{--    </div>--}}
+    @yield('nav')
 
     <div class="container">
         @yield('content')
@@ -30,6 +27,15 @@
     {{-- jquery --}}
     <script src="{{asset('storage/jquery/jquery.min.js')}}"></script>
 
+    {{--    vue.js--}}
+    <script src="{{asset('storage/vue/vue.global.min.js')}}"></script>
+
+    {{--phaser--}}
+    <script src="{{asset('storage/game-engine/phaser.min.js')}}"></script>
+
+    {{--lottie--}}
+    <script src="{{asset('storage/animation/lottie.js')}}"></script>
+{{--    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>--}}
     {{-- custom js --}}
     @yield('scripts')
 
