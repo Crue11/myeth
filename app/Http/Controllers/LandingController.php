@@ -16,4 +16,12 @@ class LandingController extends Controller
     public function symbolPage(){
         return view('symbol.index');
     }
+
+    public function learn(){
+        return view('symbol.learn');
+    }
+
+    public function test(){
+        return view('symbol.test');
+    }
 }
